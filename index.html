@@ -77,7 +77,6 @@
             padding-top: 20px;
             padding-left: 300px;
         }
-        
         #image-container {
          width: 250px;
          height: 250px;
@@ -89,6 +88,10 @@
          border-top-left-radius: 100px;
          border-bottom-right-radius: 100px;
         }
+        #image-container:hover {
+            transform: scale(1.07);
+        }
+        
         #image-container img {
          width: 100%;
          height: 100%;
@@ -97,21 +100,11 @@
          border-radius: 10px;
          border: 3px ridge white;
         }
-        .image-side-by-side {
-            width: 400px;
-            height: 400px;
-            display: flex;
-            justify-content:center;
-            border-style:inset ;
-            box-shadow: 5px 5px 3px 5px black;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
+        #image-container img:hover {
+         transform: scale(1.07);
         }
 
-        .image-side-by-side img {
-            max-width: 50%;
-            border-radius: 150px;
-        }
+        
         #grid {
              background-color: rgb(214, 203, 187);
              padding-left: 0px;
@@ -163,7 +156,7 @@
         
         
         </div >
-        <div style="height: 55vh;width: 100wh; background-color: #000000; align-items:center;  padding-top: 15px;">
+        <div style="height: 55vh;width: 100wh; background-color: #000000; align-items:center;  padding-top: 15px; ">
             <img src="cta1.jpeg" alt="CTA1" style="height: 50vh;  width: 250px;">
             <img src="cta2.jpeg" alt="CTA1" style="height: 50vh; width:280px;">
             <img src="cta3.jpeg" alt="CTA1" style="height: 50vh; ">
