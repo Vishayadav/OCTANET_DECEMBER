@@ -46,10 +46,15 @@
             z-index: 99;
         }
         body{
+
             font-family: 'Times new roman','caveat', serif;
             scroll-behavior: smooth;
             padding-top: 80px ;
             background-color:rgb(135, 75, 16) ;
+        }
+        .div{
+            max-width: 100wh;
+            max-height: 100vh;
         }
         .section {
             padding: 0px;
@@ -62,11 +67,14 @@
             text-align: center;
         }
         .grid-container {
+            max-width: 100wh;
+            max-height: 100vh;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            padding-right: 300px;
-            padding-bottom: 30px;
+            gap: 100px;
+            padding-right: 200px;
+            padding-bottom: 20px;
+            padding-top: 20px;
         }
         
         #image-container {
@@ -91,7 +99,7 @@
             width: 400px;
             height: 400px;
             display: flex;
-            justify-content:left;
+            justify-content:center;
             border-style:inset ;
             box-shadow: 5px 5px 3px 5px black;
             border-top-left-radius: 50px;
@@ -121,7 +129,7 @@
     <img src="octwebpage1.9.jpeg" style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px; ">
     
     <section>
-        <div  style="background-color: rgb(255, 224, 193); height: 40vh; width: 100wh; justify-content:center ;">
+        <div class="div" style="background-color: rgb(255, 224, 193); height: 40vh; width: 100wh; justify-content:center ;">
                 
                     <h2 style="padding-top:50px; text-align: center; padding-bottom: 50px;">About Us</h2>
                     <h4 style="text-align: center; padding-left: 100px; padding-right: 100px;">
