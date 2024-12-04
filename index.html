@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visha Yadav's Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <style>
-
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo{
+            font-family: 'Times New Roman','caveat', Times, serif;
+            font-size: 2rem;
+            color: white;
+            user-select: none; 
+        }
+        .navigation a{
+            position: sticky;
+            font-size: 1.rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: transparent;
+            border: 2px ridge rgba(rgb(47, 47, 47), green, blue, alpha);
+            backdrop-filter: blur(20px);
+            display: flex;
+            width: 100%;
+            padding: 20px 100px;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+        body{
+            font-family: 'caveat', 'Times new roman', serif;
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <h2 class="logo">FashionInsta</h2>
+        <nav class="navigation">
+          <a href="#">Login</a>
+        </nav>
+    </header>
+    <img src="octwebpage1.1.jpg" style="width: 100wh; height: 100vh;">
 
     <script>
         
