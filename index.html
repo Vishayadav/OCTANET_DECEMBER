@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .logo{
-            font-family: 'Times New Roman','caveat', Times, serif;
+
+        .logo {
+            font-family: 'Times New Roman', 'caveat', Times, serif;
             font-size: 2rem;
             color: white;
             user-select: none;
-            padding-left: 0px; 
+            padding-left: 0px;
         }
-        .navigation a{
+
+        .navigation a {
             position: sticky;
             font-size: 1.rem;
             color: rgb(255, 255, 255);
@@ -30,7 +33,8 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-        header{
+
+        header {
             position: fixed;
             top: 0;
             left: 0;
@@ -45,17 +49,20 @@
             align-items: center;
             z-index: 99;
         }
-        body{
 
-            font-family: 'Times new roman','caveat', serif;
+        body {
+
+            font-family: 'Times new roman', 'caveat', serif;
             scroll-behavior: smooth;
-            padding-top: 80px ;
-            background-color:rgb(135, 75, 16) ;
+            padding-top: 80px;
+            background-color: rgb(135, 75, 16);
         }
-        .div{
+
+        .div {
             max-width: 100wh;
             max-height: 100vh;
         }
+
         .section {
             padding: 0px;
             margin: 0px;
@@ -66,6 +73,7 @@
             align-items: center;
             text-align: center;
         }
+
         .grid-container {
             max-width: 100wh;
             max-height: 100vh;
@@ -77,57 +85,131 @@
             padding-top: 20px;
             padding-left: 300px;
         }
+
         #image-container {
-         width: 250px;
-         height: 250px;
-         margin: auto;
-         padding: 0%;
-         background-color: #f0f0f0;
-         border: 1px solid #ccc;
-         display: block;
-         border-top-left-radius: 100px;
-         border-bottom-right-radius: 100px;
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            padding: 0%;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: block;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
         }
+
         #image-container:hover {
             transform: scale(1.07);
         }
-        
+
         #image-container img {
-         width: 100%;
-         height: 100%;
-         object-fit:contain;
-         box-shadow: 3px 3px 2px 3px black;
-         border-radius: 10px;
-         border: 3px ridge white;
-        }
-        #image-container img:hover {
-         transform: scale(1.07);
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            box-shadow: 3px 3px 2px 3px black;
+            border-radius: 10px;
+            border: 3px ridge white;
         }
 
-        
+        #image-container img:hover {
+            transform: scale(1.07);
+        }
+
+
         #grid {
-             background-color: rgb(214, 203, 187);
-             padding-left: 0px;
-             }
-       .btn{
-        width: 130px;
+            background-color: rgb(214, 203, 187);
+            padding-left: 0px;
+        }
+
+        .btn {
+            width: 130px;
             height: 50px;
             background: black;
             border: 2px solid #162938;
             outline: none;
-            border-radius:  6px;
+            border-radius: 6px;
             cursor: pointer;
             color: #ffffff;
             justify-content: center;
-       }
-       .btn:hover{
-        background-color: #d4c3b0;
-        color: black;
-        font-weight: 700;
-       }
-             
+        }
+
+        .btn:hover {
+            background-color: #d4c3b0;
+            color: black;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            .navigation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation a {
+                margin: 5px 0;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 20px 10px;
+            }
+
+            #image-container {
+                width: 100%;
+                height: auto;
+            }
+
+            .section {
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .navigation a {
+                font-size: 0.9rem;
+            }
+
+            .section h1 {
+                font-size: 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1rem;
+            }
+
+            .section h4 {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                height: 40px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h2 class="logo">FashionInsta</h2>
@@ -135,27 +217,39 @@
             <a href="#">About</a>
             <a href="#">Products</a>
             <a href="#">Contacts</a>
-          <a href="#">Begin</a>
+            <a href="#">Begin</a>
         </nav>
     </header>
-    <img src="octwebpage1.6.jpeg" style="width: 100wh; height: 90vh; padding-left: 0px; padding-right: 0px; border: 2px ridge black;" >
-    <img src="octwebpage1.2mod.jpeg"  style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 4px ridge; ">
-    <img src="octwebpage1.9.jpeg" style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 2px ridge black; ">
-    
+    <img src="octwebpage1.6.jpeg"
+        style="width: 100wh; height: 90vh; padding-left: 0px; padding-right: 0px; border: 2px ridge black;">
+    <img src="octwebpage1.2mod.jpeg"
+        style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 4px ridge; ">
+    <img src="octwebpage1.9.jpeg"
+        style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 2px ridge black; ">
+
     <section>
-       
-        <div class="nav" style="height: 50vh; width: 100wh; background-color: #756758;" >
-           <h1 style="text-align:center; padding-top: 45px; padding-bottom: 25px;">Explore Latest Trends In Fashion And Find Your Perfect Fit!</h1>
-           <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio eveniet quasi qui?</h4>
-           <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio eveniet quasi qui?</h4>
-           <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio eveniet quasi qui?</h4>
-           <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio eveniet quasi qui?</h4>
-            <nav  style="justify-content: center; padding-left: 700px; padding-top: 60px;">
+
+        <div class="nav" style="height: 50vh; width: 100wh; background-color: #756758;">
+            <h1 style="text-align:center; padding-top: 45px; padding-bottom: 25px;">Explore Latest Trends In Fashion And
+                Find Your Perfect Fit!</h1>
+            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
+                eveniet quasi qui?</h4>
+            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
+                eveniet quasi qui?</h4>
+            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
+                eveniet quasi qui?</h4>
+            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
+                eveniet quasi qui?</h4>
+            <nav style="justify-content: center; padding-left: 700px; padding-top: 60px;">
                 <button class="btn">Shop Now</button>
             </nav>
-        
-        
-        </div >
+
+
+        </div>
         <div style="height: 55vh;width: 100wh; background-color: #000000; align-items:center;  padding-top: 15px; ">
             <img src="cta1.jpeg" alt="CTA1" style="height: 50vh;  width: 250px;">
             <img src="cta2.jpeg" alt="CTA1" style="height: 50vh; width:280px;">
@@ -166,150 +260,167 @@
         </div>
     </section>
     <section>
-        <div class="div" style="background-color: rgb(255, 224, 193); height: 40vh; width: 100wh; justify-content:center ;">
-                
-                    <h2 style="padding-top:50px; text-align: center; padding-bottom: 50px;">About Us</h2>
-                    <h4 style="text-align: center; padding-left: 100px; padding-right: 100px;">
-                        <strong>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit inventore eveniet natus? Eligendi cum velit officiis minima quo libero beatae eaque necessitatibus voluptates illum rerum obcaecati fugit animi tempora laborum qui, delectus harum ab maiores et natus deserunt minus! Porro labore quod veniam odit architecto explicabo esse aperiam voluptatum dolorem praesentium quam maiores, impedit et a voluptatibus unde! Dolorum fuga voluptatem deleniti sapiente ducimus aliquam aperiam assumenda, quibusdam nobis iure! Earum numquam itaque maxime sint quae similique, magnam incidunt tempora pariatur voluptatem qui eos natus.
-                        </strong>
-                    </h4>
-                
+        <div class="div"
+            style="background-color: rgb(255, 224, 193); height: 40vh; width: 100wh; justify-content:center ;">
+
+            <h2 style="padding-top:50px; text-align: center; padding-bottom: 50px;">About Us</h2>
+            <h4 style="text-align: center; padding-left: 100px; padding-right: 100px;">
+                <strong>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur
+                    voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit
+                    inventore eveniet natus? Eligendi cum velit officiis minima quo libero beatae eaque necessitatibus
+                    voluptates illum rerum obcaecati fugit animi tempora laborum qui, delectus harum ab maiores et natus
+                    deserunt minus! Porro labore quod veniam odit architecto explicabo esse aperiam voluptatum dolorem
+                    praesentium quam maiores, impedit et a voluptatibus unde! Dolorum fuga voluptatem deleniti sapiente
+                    ducimus aliquam aperiam assumenda, quibusdam nobis iure! Earum numquam itaque maxime sint quae
+                    similique, magnam incidunt tempora pariatur voluptatem qui eos natus.
+                </strong>
+            </h4>
+
         </div>
     </section>
 
     <section id="grid" class="section">
-        
+
         <img src="octwebpage1.1.jpg" style="height: 100vh; width: 100wh; padding-left:0px; border: 2px  solid ; ">
         <div class="grid-container">
-          
+
             <div id="image-container">
                 <img src="spring.jpeg" alt="Spring" style="  border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                   <h2>Spring</h2>
-              </div>
-              
-       
-       
+                <h2>Spring</h2>
+            </div>
+
+
+
             <div id="image-container">
                 <img src="summer.jpeg" alt="summer" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                   <h2>Summer</h2>
-              </div>
-              
-       
-       
+                <h2>Summer</h2>
+            </div>
+
+
+
             <div id="image-container">
                 <img src="autumn.jpeg" alt="Autumn" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                   <h2>Autumn</h2>
-              </div>
-              
-        
-        
+                <h2>Autumn</h2>
+            </div>
+
+
+
             <div id="image-container">
                 <img src="winter.jpeg" alt="Winter" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                   <h2>Winter</h2>
-              </div>
-             
+                <h2>Winter</h2>
+            </div>
+
         </div>
-       
+
     </section>
     <section id="grid" class="section" style="background-color: rgb(127 120 109);">
-        
-        
+
+
         <div class="grid-container" style=" height: 100vh; width: 100wh;padding-left: 200px;
         padding-bottom: 20px;
         padding-top: 20px; padding-right: 300px;">
-          
+
             <div id="image-container" style=" border-top-right-radius: 100px;
             border-bottom-left-radius: 100px;">
                 <img src="casual.jpeg" alt="Casual" style="   border-top-right-radius: 100px;
                 border-bottom-left-radius: 100px; background-size: contain;">
-                   <h2>Casual Wear</h2>
-              </div>
-              
-       
-       
+                <h2>Casual Wear</h2>
+            </div>
+
+
+
             <div id="image-container" style=" border-top-right-radius: 100px;
             border-bottom-left-radius: 100px;">
                 <img src="formal.jpeg" alt="Formal" style="
                border-top-right-radius: 100px;
                    border-bottom-left-radius: 100px; ">
-                   <h2>Formal Wear</h2>
-              </div>
-              
-       
-       
+                <h2>Formal Wear</h2>
+            </div>
+
+
+
             <div id="image-container" style=" border-top-right-radius: 100px;
-            border-bottom-left-radius: 100px;"  >
+            border-bottom-left-radius: 100px;">
                 <img src="active.jpeg" alt="Active" style="
                 border-top-right-radius: 100px;
                    border-bottom-left-radius: 100px; ">
-                   <h2>Active Wear</h2>
-              </div>
-              
-        
-        
+                <h2>Active Wear</h2>
+            </div>
+
+
+
             <div id="image-container" style=" border-top-right-radius: 100px;
             border-bottom-left-radius: 100px;">
                 <img src="outer.jpeg" alt="outer" style="
                 border-top-right-radius: 100px;
                    border-bottom-left-radius: 100px; background-size: cover;">
-                   <h2>Outer Wear</h2>
-              </div>
-             
+                <h2>Outer Wear</h2>
+            </div>
+
         </div>
         <img src="octwebpage1.2.jpg" style="height: 100vh; width: 100wh; padding-right:0px; border: 2px solid white; ">
     </section>
-    <section  class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
+    <section class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
         <div style="left: 5px; text-align: center; height: 100vh; width: 50%; background-color: rgb(198, 168, 124);">
             <h1 style="justify-content: center; font-size: 4rem; padding-top: 100px;">
                 Discover Your Style
             </h1>
             <h2 style="padding-top: 25px; text-align: justify; padding-left: 25px; padding-right: 25px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam quod natus culpa ut at et ex quidem eos molestiae sed quibusdam dolor magnam, iure tempore fugit esse optio sunt delectus. Asperiores dolorum animi officia ea voluptas, atque aliquid quasi cumque architecto provident molestias omnis recusandae, magni corporis voluptate vel, voluptatum at. Maxime porro quibusdam tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique quaerat officia sit aspernatur, temporibus nobis distinctio voluptatum est eum alias adipisci nam reprehenderit assumenda voluptatem ab iure cupiditate velit id optio dolorum delectus corrupti cum quae! Minima iure laudantium error neque aperiam repellendus unde nobis omnis vitae dolorem, officia alias doloremque eveniet ex, qui quam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam quod natus culpa ut at et ex
+                quidem eos molestiae sed quibusdam dolor magnam, iure tempore fugit esse optio sunt delectus. Asperiores
+                dolorum animi officia ea voluptas, atque aliquid quasi cumque architecto provident molestias omnis
+                recusandae, magni corporis voluptate vel, voluptatum at. Maxime porro quibusdam tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique quaerat officia sit
+                aspernatur, temporibus nobis distinctio voluptatum est eum alias adipisci nam reprehenderit assumenda
+                voluptatem ab iure cupiditate velit id optio dolorum delectus corrupti cum quae! Minima iure laudantium
+                error neque aperiam repellendus unde nobis omnis vitae dolorem, officia alias doloremque eveniet ex, qui
+                quam.
             </h2>
-                    </div>
-<img src="octwebpage2.jpeg" alt="choose" style="padding-right: 0px; margin-right:0px ; height: 100vh; width: 100wh; ">
+        </div>
+        <img src="octwebpage2.jpeg" alt="choose"
+            style="padding-right: 0px; margin-right:0px ; height: 100vh; width: 100wh; ">
     </section>
 
 
-    
-    <section >
+
+    <section>
         <div style="height: 30vh; width: 100wh;justify-content: center;background-color: beige;">
-                    <h2 style="text-align: center; padding-top: 30px; padding-bottom: 25px;"> Our Exclusive Services</h2>
-                    <p style="text-align: center; padding-left: 100px; padding-right: 100px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                    </p>
+            <h2 style="text-align: center; padding-top: 30px; padding-bottom: 25px;"> Our Exclusive Services</h2>
+            <p style="text-align: center; padding-left: 100px; padding-right: 100px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            </p>
         </div>
     </section>
     <script>
-        
+
     </script>
 
 
 
-    
+
 </body>
+
 </html>
