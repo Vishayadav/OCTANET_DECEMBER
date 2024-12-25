@@ -58,12 +58,32 @@
             background-color: rgb(135, 75, 16);
         }
 
-        .div {
-            max-width: 100wh;
-            max-height: 100vh;
+        .dip {
+            background-color: rgb(255, 224, 193);
+            height: 40vh;
+            width: 100wh;
+            justify-content: center;
+        }
+
+        img {
+            width: 100wh;
+            height: 90vh;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         .section {
+            padding: 0px;
+            margin: 0px;
+            height: 100vh;
+            width: 100wh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section1 {
             padding: 0px;
             margin: 0px;
             height: 100vh;
@@ -131,6 +151,9 @@
             cursor: pointer;
             color: #ffffff;
             justify-content: center;
+            justify-content: center;
+            margin-left: 700px;
+            margin-top: 60px;
         }
 
         .btn:hover {
@@ -139,73 +162,236 @@
             font-weight: 700;
         }
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
+        .nav {
+            height: 50vh;
+            width: 100wh;
+            background-color: #756758;
+        }
+
+        .miya {
+            height: 55vh;
+            width: 100wh;
+            background-color: #000000;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+
+
+        .dip h2 {
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .dip h4 {
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .ourex {
+            height: 30vh;
+            width: 100wh;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .ourex h2 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+
+        .ourex p {
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        @media (max-width: 600px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
 
-            .navigation {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .logo {
+                font-family: 'Times New Roman', 'caveat', Times, serif;
+                font-size: 1.3rem;
+                color: white;
+                user-select: none;
+                padding-left: 0px;
             }
 
             .navigation a {
-                margin: 5px 0;
+                position: sticky;
+                font-size: 0.8rem;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-weight: 700;
+                margin-left: 10px;
+                margin-right: 10px;
             }
 
-            .grid-container {
-                grid-template-columns: 1fr;
-                padding: 20px 10px;
-            }
-
-            #image-container {
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgb(72, 38, 3);
+                border: 2px ridge rgba(rgb(47, 47, 47), green, blue, alpha);
+                backdrop-filter: blur(20px);
+                display: flex;
                 width: 100%;
-                height: auto;
-            }
-
-            .section {
-                height: auto;
-                padding: 20px 0;
-            }
-
-            .btn {
-                width: 100%;
-                margin: 10px 0;
+                height: 80px;
+                padding: 10px;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 99;
             }
 
             img {
                 width: 100%;
-                height: auto;
+                height: 50vh;
+                padding-left: 0px;
+                padding-right: 0px;
             }
-        }
 
-        @media (max-width: 480px) {
-            .logo {
+            .dis {
+                display: none;
+            }
+
+
+            .dip {
+                background-color: rgb(255, 224, 193);
+                height: 50vh;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .dip h2 {
+                padding-top: 20px;
+                text-align: center;
+                padding-bottom: 30px;
                 font-size: 1.5rem;
+                font-weight: 600;
             }
 
-            .navigation a {
-                font-size: 0.9rem;
-            }
-
-            .section h1 {
-                font-size: 1.5rem;
-            }
-
-            .section h2 {
+            .dip h4 {
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: justify;
                 font-size: 1rem;
+                font-weight: 400;
             }
 
-            .section h4 {
-                font-size: 0.9rem;
+            .nav {
+                height: 80vh;
+                width: 100%;
             }
+
+            .nav h4 {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .section {
+                padding: 0px;
+                margin: 0px;
+                height: 80vh;
+                width: 100%;
+                display: flex;
+            }
+
+            .section1 {
+                padding: 0px;
+                margin: 0px;
+                height: 170vh;
+                width: 100%;
+                display: flex;
+            }
+
+            .grid-container {
+                width: 100%;
+                height: 180vh;
+                display: block;
+                gap: 20px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                top: 0;
+                left: 0;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #image-container {
+                width: 250px;
+                height: 250px;
+                margin: auto;
+                padding: 0%;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                display: block;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                margin-bottom: 30px;
+            }
+
+
+            #image-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                box-shadow: 3px 3px 2px 3px black;
+                border-radius: 10px;
+                border: 3px ridge white;
+            }
+
+
+
 
             .btn {
-                height: 40px;
+                width: 130px;
+                height: 50px;
+                background: black;
+                border: 2px solid #162938;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                color: #ffffff;
+                justify-content: center;
+                justify-content: center;
+                margin-left: 125px;
+                margin-top: 60px;
             }
+
+
+            .miya {
+                display: none;
+            }
+            .ourex {
+            height: 70vh;
+            width: 100%;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .ourex h2 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .ourex p {
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+
+
         }
     </style>
 </head>
@@ -220,16 +406,13 @@
             <a href="#">Begin</a>
         </nav>
     </header>
-    <img src="octwebpage1.6.jpeg"
-        style="width: 100wh; height: 90vh; padding-left: 0px; padding-right: 0px; border: 2px ridge black;">
-    <img src="octwebpage1.2mod.jpeg"
-        style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 4px ridge; ">
-    <img src="octwebpage1.9.jpeg"
-        style="width: 100wh; height: 90vh;padding-left: 0px; padding-right: 0px;border: 2px ridge black; ">
+    <img class="dis" src="octwebpage1.6.jpeg" style=" border: 2px ridge black;">
+    <img src="octwebpage1.2mod.jpeg" style="border: 4px ridge; ">
+    <img class="dis" src="octwebpage1.9.jpeg" style="border: 2px ridge black; ">
 
     <section>
 
-        <div class="nav" style="height: 50vh; width: 100wh; background-color: #756758;">
+        <div class="nav">
             <h1 style="text-align:center; padding-top: 45px; padding-bottom: 25px;">Explore Latest Trends In Fashion And
                 Find Your Perfect Fit!</h1>
             <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -244,13 +427,13 @@
             <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
                 eveniet quasi qui?</h4>
-            <nav style="justify-content: center; padding-left: 700px; padding-top: 60px;">
+            <nav>
                 <button class="btn">Shop Now</button>
             </nav>
 
 
         </div>
-        <div style="height: 55vh;width: 100wh; background-color: #000000; align-items:center;  padding-top: 15px; ">
+        <div class="miya">
             <img src="cta1.jpeg" alt="CTA1" style="height: 50vh;  width: 250px;">
             <img src="cta2.jpeg" alt="CTA1" style="height: 50vh; width:280px;">
             <img src="cta3.jpeg" alt="CTA1" style="height: 50vh; ">
@@ -260,11 +443,10 @@
         </div>
     </section>
     <section>
-        <div class="div"
-            style="background-color: rgb(255, 224, 193); height: 40vh; width: 100wh; justify-content:center ;">
+        <div class="dip">
 
-            <h2 style="padding-top:50px; text-align: center; padding-bottom: 50px;">About Us</h2>
-            <h4 style="text-align: center; padding-left: 100px; padding-right: 100px;">
+            <h2>About Us</h2>
+            <h4>
                 <strong>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur
                     voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit
@@ -279,122 +461,131 @@
 
         </div>
     </section>
+    <div class="dis">
+        <section class="section1" style="background-color: rgb(214, 203, 187);">
 
-    <section id="grid" class="section">
+            <img class="dis" src="octwebpage1.1.jpg"
+                style="height: 100vh; width: 100wh; padding-left:0px; border: 2px  solid ; ">
+            <div class="grid-container">
 
-        <img src="octwebpage1.1.jpg" style="height: 100vh; width: 100wh; padding-left:0px; border: 2px  solid ; ">
-        <div class="grid-container">
-
-            <div id="image-container">
-                <img src="spring.jpeg" alt="Spring" style="  border-top-left-radius: 100px;
+                <div id="image-container">
+                    <img src="spring.jpeg" alt="Spring" style="  border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                <h2>Spring</h2>
-            </div>
+                    <h2>Spring</h2>
+                </div>
 
 
 
-            <div id="image-container">
-                <img src="summer.jpeg" alt="summer" style="
+                <div id="image-container">
+                    <img src="summer.jpeg" alt="summer" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                <h2>Summer</h2>
-            </div>
+                    <h2>Summer</h2>
+                </div>
 
 
 
-            <div id="image-container">
-                <img src="autumn.jpeg" alt="Autumn" style="
+                <div id="image-container">
+                    <img src="autumn.jpeg" alt="Autumn" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                <h2>Autumn</h2>
-            </div>
+                    <h2>Autumn</h2>
+                </div>
 
 
 
-            <div id="image-container">
-                <img src="winter.jpeg" alt="Winter" style="
+                <div id="image-container">
+                    <img src="winter.jpeg" alt="Winter" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
-                <h2>Winter</h2>
+                    <h2>Winter</h2>
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
-    <section id="grid" class="section" style="background-color: rgb(127 120 109);">
+        <section class="section1" style="background-color: rgb(127 120 109);">
 
 
-        <div class="grid-container" style=" height: 100vh; width: 100wh;padding-left: 200px;
-        padding-bottom: 20px;
-        padding-top: 20px; padding-right: 300px;">
+            <div class="grid-container" style=" height: 100vh; width: 100wh;padding-left: 200px;
+            padding-bottom: 20px;
+            padding-top: 20px; padding-right: 300px;">
 
-            <div id="image-container" style=" border-top-right-radius: 100px;
-            border-bottom-left-radius: 100px;">
-                <img src="casual.jpeg" alt="Casual" style="   border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px; background-size: contain;">
-                <h2>Casual Wear</h2>
+                <div id="image-container" style=" border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;">
+                    <img src="casual.jpeg" alt="Casual" style="   border-top-right-radius: 100px;
+                    border-bottom-left-radius: 100px; background-size: contain;">
+                    <h2>Casual Wear</h2>
+                </div>
+
+
+
+                <div id="image-container" style=" border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;">
+                    <img src="formal.jpeg" alt="Formal" style="
+                   border-top-right-radius: 100px;
+                       border-bottom-left-radius: 100px; ">
+                    <h2>Formal Wear</h2>
+                </div>
+
+
+
+                <div id="image-container" style=" border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;">
+                    <img src="active.jpeg" alt="Active" style="
+                    border-top-right-radius: 100px;
+                       border-bottom-left-radius: 100px; ">
+                    <h2>Active Wear</h2>
+                </div>
+
+
+
+                <div id="image-container" style=" border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;">
+                    <img src="outer.jpeg" alt="outer" style="
+                    border-top-right-radius: 100px;
+                       border-bottom-left-radius: 100px; background-size: cover;">
+                    <h2>Outer Wear</h2>
+                </div>
+
             </div>
 
-
-
-            <div id="image-container" style=" border-top-right-radius: 100px;
-            border-bottom-left-radius: 100px;">
-                <img src="formal.jpeg" alt="Formal" style="
-               border-top-right-radius: 100px;
-                   border-bottom-left-radius: 100px; ">
-                <h2>Formal Wear</h2>
+            <img class="dis" src="octwebpage1.2.jpg"
+                style="height: 100vh; width: 100wh; padding-right:0px; border: 2px solid white; ">
+        </section>
+        <section class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
+            <div
+                style="left: 5px; text-align: center; height: 100vh; width: 50%; background-color: rgb(198, 168, 124);">
+                <h1 style="justify-content: center; font-size: 4rem; padding-top: 100px;">
+                    Discover Your Style
+                </h1>
+                <h2 style="padding-top: 25px; text-align: justify; padding-left: 25px; padding-right: 25px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam quod natus culpa ut at et ex
+                    quidem eos molestiae sed quibusdam dolor magnam, iure tempore fugit esse optio sunt delectus.
+                    Asperiores
+                    dolorum animi officia ea voluptas, atque aliquid quasi cumque architecto provident molestias omnis
+                    recusandae, magni corporis voluptate vel, voluptatum at. Maxime porro quibusdam tenetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique quaerat officia sit
+                    aspernatur, temporibus nobis distinctio voluptatum est eum alias adipisci nam reprehenderit
+                    assumenda
+                    voluptatem ab iure cupiditate velit id optio dolorum delectus corrupti cum quae! Minima iure
+                    laudantium
+                    error neque aperiam repellendus unde nobis omnis vitae dolorem, officia alias doloremque eveniet ex,
+                    qui
+                    quam.
+                </h2>
             </div>
-
-
-
-            <div id="image-container" style=" border-top-right-radius: 100px;
-            border-bottom-left-radius: 100px;">
-                <img src="active.jpeg" alt="Active" style="
-                border-top-right-radius: 100px;
-                   border-bottom-left-radius: 100px; ">
-                <h2>Active Wear</h2>
-            </div>
-
-
-
-            <div id="image-container" style=" border-top-right-radius: 100px;
-            border-bottom-left-radius: 100px;">
-                <img src="outer.jpeg" alt="outer" style="
-                border-top-right-radius: 100px;
-                   border-bottom-left-radius: 100px; background-size: cover;">
-                <h2>Outer Wear</h2>
-            </div>
-
-        </div>
-        <img src="octwebpage1.2.jpg" style="height: 100vh; width: 100wh; padding-right:0px; border: 2px solid white; ">
-    </section>
-    <section class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
-        <div style="left: 5px; text-align: center; height: 100vh; width: 50%; background-color: rgb(198, 168, 124);">
-            <h1 style="justify-content: center; font-size: 4rem; padding-top: 100px;">
-                Discover Your Style
-            </h1>
-            <h2 style="padding-top: 25px; text-align: justify; padding-left: 25px; padding-right: 25px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam quod natus culpa ut at et ex
-                quidem eos molestiae sed quibusdam dolor magnam, iure tempore fugit esse optio sunt delectus. Asperiores
-                dolorum animi officia ea voluptas, atque aliquid quasi cumque architecto provident molestias omnis
-                recusandae, magni corporis voluptate vel, voluptatum at. Maxime porro quibusdam tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique quaerat officia sit
-                aspernatur, temporibus nobis distinctio voluptatum est eum alias adipisci nam reprehenderit assumenda
-                voluptatem ab iure cupiditate velit id optio dolorum delectus corrupti cum quae! Minima iure laudantium
-                error neque aperiam repellendus unde nobis omnis vitae dolorem, officia alias doloremque eveniet ex, qui
-                quam.
-            </h2>
-        </div>
-        <img src="octwebpage2.jpeg" alt="choose"
-            style="padding-right: 0px; margin-right:0px ; height: 100vh; width: 100wh; ">
-    </section>
-
+            <img src="octwebpage2.jpeg" alt="choose"
+                style="padding-right: 0px; margin-right:0px ; height: 100vh; width: 100wh; ">
+        </section>
+    </div>
 
 
     <section>
-        <div style="height: 30vh; width: 100wh;justify-content: center;background-color: beige;">
-            <h2 style="text-align: center; padding-top: 30px; padding-bottom: 25px;"> Our Exclusive Services</h2>
-            <p style="text-align: center; padding-left: 100px; padding-right: 100px;">
+        <div class="ourex">
+            <h2> Our Exclusive Services</h2>
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
