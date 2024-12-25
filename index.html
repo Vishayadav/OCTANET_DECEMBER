@@ -209,6 +209,88 @@
             padding-right: 100px;
         }
 
+
+        .background2 {
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            width: 100%;
+
+        }
+
+
+        .background2 img {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .overlay h1 {
+            z-index: 3;
+            font-size: 3rem;
+            margin-top: 90px;
+            justify-self: center;
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        .reviewcontainer {
+            align-items: center;
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+        .review {
+            align-content: center;
+            height: 300px;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(80px);
+            color: white;
+            border-radius: 20%;
+            border: 2px solid white;
+            outline: 1.5x solid black;
+            transition: 0.3s ease;
+        }
+
+        .review:hover {
+            transform: scale(1.1);
+            border: 2px solid white;
+            outline: 1px solid black;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .review h2 {
+            text-align: justify;
+            justify-self: center;
+            border-bottom: 2px solid white;
+        }
+
+        .review h4 {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-weight: 400;
+            text-align: justify;
+        }
+
         @media (max-width: 600px) {
             * {
                 margin: 0;
@@ -370,27 +452,55 @@
             .miya {
                 display: none;
             }
+
             .ourex {
-            height: 70vh;
-            width: 100%;
-            justify-content: center;
-            background-color: beige;
-        }
+                height: 70vh;
+                width: 100%;
+                justify-content: center;
+                background-color: beige;
+            }
 
-        .ourex h2 {
-            text-align: center;
-            padding-top: 30px;
-            padding-bottom: 20px;
-        }
+            .ourex h2 {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
 
-        .ourex p {
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            text-align: justify;
-        }
+            .ourex p {
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: justify;
+            }
 
+            .bg {
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
 
+            .bg img {
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background-size: contain;
+                z-index: 1;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 2;
+            }
 
         }
     </style>
@@ -603,6 +713,48 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
             </p>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="clientreview">
+            <div class="background2">
+                <img src="cdnj11.jpeg" alt="Client Review Section goes here" width="100%" height="100vh">
+                <div class="overlay">
+                    <h1>Client Review</h1>
+                    <div class="reviewcontainer">
+                        <div class="review" style="margin-left:100px; ">
+                            <h2>Jeffry Smith</h2>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
+                                quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates neque
+                                asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
+                                voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur blanditiis?
+                                Dolorum deleniti at consectetur.</h4>
+                        </div>
+                        <div class="review" style="margin-left:50px; ">
+                            <h2>Jenna Ortega</h2>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
+                                quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates neque
+                                asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
+                                voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur blanditiis?
+                                Dolorum deleniti at consectetur.</h4>
+                        </div>
+                        <div class="review">
+                            <h2>lana Rey</h2>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
+                                quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates neque
+                                asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
+                                voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur blanditiis?
+                                Dolorum deleniti at consectetur.</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script>
