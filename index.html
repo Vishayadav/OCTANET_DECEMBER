@@ -8,56 +8,168 @@
     <title>Visha Yadav's Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@400..700&family=Diplomata+SC&family=Grechen+Fuemen&family=Island+Moments&family=Lavishly+Yours&family=Love+Light&family=Marck+Script&family=MonteCarlo&family=Princess+Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        * {
+       
+       * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        .logo {
-            font-family: 'Times New Roman', 'caveat', Times, serif;
-            font-size: 2rem;
+        header {
+            background-color: black;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 2px solid white;
+            outline: 1.3px solid black;
+            align-content: center;
+            position: sticky;
+            align-items: center;
+        }
+
+        header h1 {
             color: white;
-            user-select: none;
-            padding-left: 0px;
+            transition: 0.3s ease;
+        }
+        header h1:hover{
+transform: scale(1.1);
+        }
+
+        .navigation {
+            display: flex;
+            margin-right: 30px;
         }
 
         .navigation a {
-            position: sticky;
-            font-size: 1.rem;
-            color: rgb(255, 255, 255);
+            margin: 15px;
+            font-size: 1.3rem;
             text-decoration: none;
-            font-weight: 700;
-            margin-left: 10px;
-            margin-right: 10px;
+            color: white;
         }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgb(72, 38, 3);
-            border: 2px ridge rgba(rgb(47, 47, 47), green, blue, alpha);
-            backdrop-filter: blur(20px);
-            display: flex;
+        .navigation a:hover {
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            border: 2px solid white;
+            outline: 1px solid black;
+        }
+
+        .homepage {
+            height: 100vh;
             width: 100%;
-            height: 80px;
-            padding: 10px;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 99;
+            display: flex;
+            background-color: rgb(255, 255, 255);
         }
 
-        body {
-
-            font-family: 'Times new roman', 'caveat', serif;
-            scroll-behavior: smooth;
-            padding-top: 80px;
-            background-color: rgb(135, 75, 16);
+        .homepage img {
+            border: 2px solid white;
+            outline: 1px solid black;
+            border-radius: 50%;
+            height: 80vh;
+            margin-left: 30px;
+            margin-top: 20px;
+            transition: 0.3s ease;
         }
 
+        .homepage img:hover {
+            transform: scale(1);
+            box-shadow: 1px 0px 4px 6px black;
+        }
+
+        .text {
+            display: block;
+        }
+
+        .text h2 {
+            font-size: 3rem;
+            justify-self: center;
+            margin-top: 40px;
+            transition: 0.3s ease
+        }
+
+        .text h2:hover {
+            transform: scale(1.1);
+        }
+
+        .text h4 {
+            font-weight: 400;
+            margin: 30px;
+            text-align: justify;
+        }
+
+        .but {
+            display: flex;
+            margin-left: 300px;
+        }
+
+        .but .btn {
+            align-self: center;
+            justify-self: center;
+            height: 30px;
+            width: 100px;
+            border-radius: 50px;
+            margin-top: 50px;
+            margin-right: 50px;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            outline: 1px solid black;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+            outline: 1px solid black;
+        }
+
+        .miya {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .tem img {
+            transition: 0.3s ease;
+        }
+
+        .tem img:hover {
+            transform: scale(1.2);
+            border: 2px solid white;
+            outline: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .nav h1 {
+            color: white;
+            font-size: 1.5rem;
+            justify-self: center;
+            text-align: justify;
+            font-weight: 600;
+            margin-top: 40px;
+            border-bottom: 2px solid white;
+        }
+
+        .nav h4 {
+            color: white;
+            text-align: justify;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 70px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
         .dip {
             background-color: rgb(255, 224, 193);
             height: 40vh;
@@ -65,6 +177,7 @@
             justify-content: center;
         }
 
+       
         img {
             width: 100wh;
             height: 90vh;
@@ -134,62 +247,46 @@
         #image-container img:hover {
             transform: scale(1.07);
         }
-
+        #image-container h2{
+            margin: 10px;
+            color: black;
+        }
+        
 
         #grid {
             background-color: rgb(214, 203, 187);
             padding-left: 0px;
         }
 
-        .btn {
-            width: 130px;
-            height: 50px;
-            background: black;
-            border: 2px solid #162938;
-            outline: none;
-            border-radius: 6px;
-            cursor: pointer;
-            color: #ffffff;
-            justify-content: center;
-            justify-content: center;
-            margin-left: 700px;
-            margin-top: 60px;
-        }
+     
 
-        .btn:hover {
-            background-color: #d4c3b0;
-            color: black;
-            font-weight: 700;
-        }
-
-        .nav {
-            height: 50vh;
-            width: 100wh;
-            background-color: #756758;
-        }
-
-        .miya {
-            height: 55vh;
-            width: 100wh;
-            background-color: #000000;
-            align-items: center;
-            padding-top: 15px;
-        }
-
-
+       .dip{
+        background-color: gray;
+       }
 
         .dip h2 {
+            font-weight: 700;
+            font-size: 2rem;
             padding-top: 50px;
-            text-align: center;
-            padding-bottom: 50px;
+            justify-self: center;
+            margin-bottom: 50px;
+            transition: 0.3s ease;
+        }
+        .dip h2:hover{
+transform: scale(1.2);
+border-bottom: 2px solid black;
         }
 
         .dip h4 {
-            text-align: center;
+            font-weight: 400;
+            text-align: justify;
             padding-left: 100px;
             padding-right: 100px;
         }
 
+        .dis{
+            display: flex;
+        }
         .ourex {
             height: 30vh;
             width: 100wh;
@@ -198,13 +295,18 @@
         }
 
         .ourex h2 {
-            text-align: center;
-            padding-top: 30px;
-            padding-bottom: 25px;
+            text-align: justify;
+            justify-self: center;
+            padding-top: 30px;margin-bottom: 40px;
+            transition: 0.3s ease;
+        }
+        .ourex h2:hover{
+            transform: scale(1.2);
+            border-bottom: 2px solid black;
         }
 
         .ourex p {
-            text-align: center;
+            text-align: justify;
             padding-left: 100px;
             padding-right: 100px;
         }
@@ -240,11 +342,13 @@
         .overlay h1 {
             z-index: 3;
             font-size: 3rem;
-            margin-top: 90px;
+            margin-top: 70px;
             justify-self: center;
             color: white;
             border-bottom: 2px solid white;
         }
+
+        
 
         .reviewcontainer {
             align-items: center;
@@ -291,6 +395,68 @@
             text-align: justify;
         }
 
+        .contacts {
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+        }
+
+        .social-icons {
+            background-color: rgb(211, 211, 211);
+            height: 50vh;
+            width: 100%;
+            display: block;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        .social-icons h4 {
+            font-size: 1.5rem;
+        }
+
+        .social-icons h2 {
+            font-size: 1.8rem;
+            margin: 20px;
+        }
+
+        .social-icons h5 {
+            font-size: 1rem;
+            color: rgb(82, 82, 82);
+            margin: 8px;
+        }
+
+        .social-icons h6 {
+            font-size: 2rem;
+            color: black;
+            margin: 8px;
+        }
+
+        .social-icons a {
+            display: block;
+            color: rgb(82, 82, 82);
+            text-decoration: none;
+            margin: 20px;
+            transition: 0.3s ease;
+
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            border-bottom: 2px solid black;
+            color: black;
+        }
+
+        .social-icons h4 a i {
+            margin-right: 15px;
+        }
+
+        .cnt {
+            height: 50vh;
+            width: 100%;
+        }
+
         @media (max-width: 600px) {
             * {
                 margin: 0;
@@ -300,10 +466,11 @@
 
             .logo {
                 font-family: 'Times New Roman', 'caveat', Times, serif;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 color: white;
                 user-select: none;
                 padding-left: 0px;
+                margin-left: 0px;
             }
 
             .navigation a {
@@ -312,8 +479,8 @@
                 color: rgb(255, 255, 255);
                 text-decoration: none;
                 font-weight: 700;
-                margin-left: 10px;
-                margin-right: 10px;
+                margin-left: 8px;
+                margin-right: 8px;
             }
 
             header {
@@ -325,7 +492,7 @@
                 backdrop-filter: blur(20px);
                 display: flex;
                 width: 100%;
-                height: 80px;
+                height: 50px;
                 padding: 10px;
                 justify-content: space-between;
                 align-items: center;
@@ -343,6 +510,10 @@
                 display: none;
             }
 
+            .dis1 {
+                display: none;
+            }
+
 
             .dip {
                 background-color: rgb(255, 224, 193);
@@ -354,16 +525,15 @@
             .dip h2 {
                 padding-top: 20px;
                 text-align: center;
-                padding-bottom: 30px;
+                margin-bottom: 10px;
                 font-size: 1.5rem;
                 font-weight: 600;
             }
 
             .dip h4 {
-                text-align: center;
+                text-align: justify;
                 padding-left: 10px;
                 padding-right: 10px;
-                text-align: justify;
                 font-size: 1rem;
                 font-weight: 400;
             }
@@ -457,7 +627,7 @@
                 height: 70vh;
                 width: 100%;
                 justify-content: center;
-                background-color: beige;
+                background-color: #bfbfbf;
             }
 
             .ourex h2 {
@@ -474,7 +644,7 @@
             }
 
             .bg {
-                height: 100vh;
+                height: 80vh;
                 width: 100%;
                 position: relative;
                 align-items: center;
@@ -485,7 +655,8 @@
             }
 
             .bg img {
-                height: 100vh;
+                height: 80vh;
+                width: 100%;
                 top: 0;
                 left: 0;
                 background-size: contain;
@@ -493,6 +664,8 @@
             }
 
             .overlay {
+                height: 80vh;
+                width: 100%;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -501,49 +674,158 @@
                 background-color: rgba(0, 0, 0, 0.5);
                 z-index: 2;
             }
+            .background2 img{
+                height: 80vh;
+                width: 100%;
+            }
 
+            .clientreview {
+                height: 80vh;
+                width: 100%;
+            }
+
+            .reviewcontainer {
+                align-items: center;
+                background-color: transparent;
+                padding: 10px;
+                margin-top: 70px;
+            }
+
+            .review {
+                align-content: center;
+                height: 300px;
+                width: 300px;
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(80px);
+                color: white;
+                border-radius: 20%;
+                border: 2px solid white;
+                outline: 1.5x solid black;
+                transition: 0.3s ease;
+                margin-left: 35px;
+            }
+
+
+            .review h2 {
+                text-align: justify;
+                justify-self: center;
+                border-bottom: 2px solid white;
+            }
+
+            .review h4 {
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+                font-weight: 400;
+                text-align: justify;
+            }
+
+            .contacts {
+                height: 80vh;
+                width: 100%;
+                background-color: white;
+            }
+
+            .social-icons {
+                background-color: rgb(211, 211, 211);
+                width: 100%;
+                display: block;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                padding-top: 20px;
+            }
+
+            .social-icons h4 {
+                font-size: 1.5rem;
+            }
+
+            .social-icons h2 {
+                font-size: 1.8rem;
+                margin: 20px;
+            }
+
+            .social-icons h5 {
+                font-size: 1rem;
+                color: rgb(82, 82, 82);
+                margin: 8px;
+            }
+
+            .social-icons h6 {
+                font-size: 2rem;
+                color: black;
+                margin: 8px;
+            }
+
+            .social-icons a {
+                display: block;
+                color: rgb(82, 82, 82);
+                text-decoration: none;
+                margin: 20px;
+                transition: 0.3s ease;
+
+            }
+
+            .social-icons a:hover {
+                transform: scale(1.2);
+                border-bottom: 2px solid black;
+                color: black;
+            }
+
+            .social-icons h4 a i {
+                margin-right: 15px;
+            }
+
+            .cnt {
+                height: 50vh;
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h2 class="logo">FashionInsta</h2>
+        <h1>FashionInsta</h1>
         <nav class="navigation">
+            <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Products</a>
             <a href="#">Contacts</a>
-            <a href="#">Begin</a>
+            <a href="#">Products</a>
         </nav>
     </header>
-    <img class="dis" src="octwebpage1.6.jpeg" style=" border: 2px ridge black;">
-    <img src="octwebpage1.2mod.jpeg" style="border: 4px ridge; ">
-    <img class="dis" src="octwebpage1.9.jpeg" style="border: 2px ridge black; ">
-
-    <section>
-
-        <div class="nav">
-            <h1 style="text-align:center; padding-top: 45px; padding-bottom: 25px;">Explore Latest Trends In Fashion And
-                Find Your Perfect Fit!</h1>
-            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
-                eveniet quasi qui?</h4>
-            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
-                eveniet quasi qui?</h4>
-            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
-                eveniet quasi qui?</h4>
-            <h4 style="text-align: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
-                eveniet quasi qui?</h4>
-            <nav>
-                <button class="btn">Shop Now</button>
-            </nav>
-
-
+    <div class="homepage">
+        <img src="octwebpage1.2mod.jpeg" alt="homepage2">
+        <div class="text">
+            <h2>FashionInsta</h2> 
+<hr>
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum esse iure aliquam alias ipsam
+                consequuntur explicabo rerum tenetur distinctio labore nemo, iusto nihil magnam repellat facilis odio
+                facere suscipit corporis, a natus qui. Aut asperiores a molestiae. In incidunt similique sed nesciunt
+                deleniti sequi dolores a porro mollitia cupiditate Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Culpa facilis possimus blanditiis eveniet commodi voluptate dolores esse, rerum neque fuga eos
+                quo, quaerat non molestiae est reprehenderit aliquam animi veniam vero. Consequatur fugit reprehenderit
+                sequi fugiat eveniet ad, doloribus, harum minima natus officiis dolorum repudiandae nobis quaerat modi a
+                quasi.</h4>
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum esse iure aliquam alias ipsam
+                consequuntur explicabo rerum tenetur distinctio labore nemo, iusto nihil magnam repellat facilis odio
+                facere suscipit corporis, a natus qui. Aut asperiores a molestiae. In incidunt similique sed nesciunt
+                deleniti sequi dolores a porro mollitia cupiditate Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Culpa facilis possimus blanditiis eveniet commodi voluptate dolores esse, rerum neque fuga eos
+                quo, quaerat non molestiae est reprehenderit aliquam animi veniam vero. Consequatur fugit reprehenderit
+                sequi fugiat eveniet ad, doloribus, harum minima natus officiis dolorum repudiandae nobis quaerat modi a
+                quasi.</h4>
+            <div class="but">
+                <button class="btn">Book Now</button>
+                <button class="btn">Explore</button>
+            </div>
         </div>
-        <div class="miya">
+    </div>
+    <div class="miya">
+        <hr>
+        <div class="tem">
+           
             <img src="cta1.jpeg" alt="CTA1" style="height: 50vh;  width: 250px;">
             <img src="cta2.jpeg" alt="CTA1" style="height: 50vh; width:280px;">
             <img src="cta3.jpeg" alt="CTA1" style="height: 50vh; ">
@@ -551,13 +833,32 @@
             <img src="octwebpage1.3.jpg" alt="CTA1" style="height: 50vh; ">
             <img src="octwebpage1.4.jpeg" alt="CTA1" style="height: 50vh; width: 255px; ">
         </div>
-    </section>
+        <div class="nav">
+            <hr>
+            <h1 >Explore Latest Trends In Fashion
+                And
+                Find Your Perfect Fit!</h1>
+
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolor quam alias, quisquam, corporis tenetur molestias, ullam dolorum praesentium ipsa odio
+                eveniet quasi qui?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum esse iure
+                aliquam alias ipsam
+                consequuntur explicabo rerum tenetur distinctio labore nemo, iusto nihil magnam repellat facilis odio
+                facere suscipit corporis, a natus qui. Aut asperiores a molestiae. In incidunt similique sed nesciunt
+                deleniti sequi dolores a porro mollitia cupiditate Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Culpa facilis possimus blanditiis eveniet commodi voluptate dolores esse, rerum neque fuga eos
+                quo, quaerat non molestiae est reprehenderit aliquam animi veniam vero. Consequatur fugit reprehenderit
+                sequi fugiat eveniet ad, doloribus, harum minima natus officiis dolorum repudiandae nobis quaerat modi a
+                quasi.</h4>
+        </div>
+    </div>
     <section>
         <div class="dip">
 
             <h2>About Us</h2>
             <h4>
-                <strong>
+              
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur
                     voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit
                     inventore eveniet natus? Eligendi cum velit officiis minima quo libero beatae eaque necessitatibus
@@ -565,17 +866,17 @@
                     deserunt minus! Porro labore quod veniam odit architecto explicabo esse aperiam voluptatum dolorem
                     praesentium quam maiores, impedit et a voluptatibus unde! Dolorum fuga voluptatem deleniti sapiente
                     ducimus aliquam aperiam assumenda, quibusdam nobis iure! Earum numquam itaque maxime sint quae
-                    similique, magnam incidunt tempora pariatur voluptatem qui eos natus.
-                </strong>
+                    similique, magnam incidunt tempora pariatur voluptatem qui eos natus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, incidunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nostrum .
+             
             </h4>
 
         </div>
     </section>
-    <div class="dis">
-        <section class="section1" style="background-color: rgb(214, 203, 187);">
+    <div class="dis1">
+        <section class="section1" style="background-color: rgb(90 90 90);">
 
-            <img class="dis" src="octwebpage1.1.jpg"
-                style="height: 100vh; width: 100wh; padding-left:0px; border: 2px  solid ; ">
+            <img  src="octwebpage1.1.jpg"
+                style="height: 100vh; width: 100%;  border: 2px  solid; ">
             <div class="grid-container">
 
                 <div id="image-container">
@@ -615,7 +916,7 @@
 
         </section>
 
-        <section class="section1" style="background-color: rgb(127 120 109);">
+        <section class="section1" style="background-color: rgb(130 126 121);">
 
 
             <div class="grid-container" style=" height: 100vh; width: 100wh;padding-left: 200px;
@@ -642,7 +943,7 @@
 
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;">
+                border-bottom-left-radius: 100px; margin-bottom: 40px;">
                     <img src="active.jpeg" alt="Active" style="
                     border-top-right-radius: 100px;
                        border-bottom-left-radius: 100px; ">
@@ -652,7 +953,7 @@
 
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;">
+                border-bottom-left-radius: 100px;  margin-bottom: 40px;">
                     <img src="outer.jpeg" alt="outer" style="
                     border-top-right-radius: 100px;
                        border-bottom-left-radius: 100px; background-size: cover;">
@@ -664,7 +965,7 @@
             <img class="dis" src="octwebpage1.2.jpg"
                 style="height: 100vh; width: 100wh; padding-right:0px; border: 2px solid white; ">
         </section>
-        <section class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
+        <!-- <section class="section" style="background-color: rgb(198, 168, 124); justify-content: right;">
             <div
                 style="left: 5px; text-align: center; height: 100vh; width: 50%; background-color: rgb(198, 168, 124);">
                 <h1 style="justify-content: center; font-size: 4rem; padding-top: 100px;">
@@ -688,12 +989,12 @@
             </div>
             <img src="octwebpage2.jpeg" alt="choose"
                 style="padding-right: 0px; margin-right:0px ; height: 100vh; width: 100wh; ">
-        </section>
+        </section> -->
     </div>
 
 
     <section>
-        <div class="ourex">
+        <div class="ourex" style="background-color: #bfbfbf;">
             <h2> Our Exclusive Services</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -720,27 +1021,35 @@
     <section>
         <div class="clientreview">
             <div class="background2">
-                <img src="cdnj11.jpeg" alt="Client Review Section goes here" width="100%" height="100vh">
+                <img src="cdnj11.jpeg" alt="Client Review Section goes here" >
                 <div class="overlay">
                     <h1>Client Review</h1>
                     <div class="reviewcontainer">
-                        <div class="review" style="margin-left:100px; ">
-                            <h2>Jeffry Smith</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
-                                quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates neque
-                                asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
-                                consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
-                                voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur blanditiis?
-                                Dolorum deleniti at consectetur.</h4>
-                        </div>
-                        <div class="review" style="margin-left:50px; ">
-                            <h2>Jenna Ortega</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
-                                quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates neque
-                                asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
-                                consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
-                                voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur blanditiis?
-                                Dolorum deleniti at consectetur.</h4>
+                        <div class="dis"  >
+                            <div class="review" style="margin-left:150px; margin-right: 40px;">
+                                <h2>Jeffry Smith</h2>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
+                                    quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates
+                                    neque
+                                    asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
+                                    voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur
+                                    blanditiis?
+                                    Dolorum deleniti at consectetur.</h4>
+                            </div>
+
+
+                            <div class="review" style="margin-left:80px; margin-right: 100px; ">
+                                <h2>Jenna Ortega</h2>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
+                                    quod distinctio minus accusantium ipsam cumque laborum ullam. Voluptas voluptates
+                                    neque
+                                    asperiores velit, nostrum dolor veniam praesentium ad Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem numquam velit et molestiae, hic ut dolor
+                                    voluptatibus saepe nesciunt, vero officia deleniti odit deserunt, pariatur
+                                    blanditiis?
+                                    Dolorum deleniti at consectetur.</h4>
+                            </div>
                         </div>
                         <div class="review">
                             <h2>lana Rey</h2>
@@ -752,10 +1061,31 @@
                                 Dolorum deleniti at consectetur.</h4>
                         </div>
 
+
                     </div>
+                    <h3 style="align-self: flex-start; justify-self:left; margin-top: 150px; font-size: 1rem; color: gray;">Made by Visha Yadav</h3>
                 </div>
             </div>
         </div>
+    </section>
+    <section>
+        <div class="contacts">
+            <div class="social-icons">
+                <h6>Locate us!</h6>
+                <hr>
+
+                <h4>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                </h4>
+                <h2>Our Address:</h3>
+                    <h5>143, Apartment Road, Near winston Bridge , Church hill station.
+                </h2>
+                <h5>627, ShakeSphere Bridge, Reset Pool , Cokor rio.</h2>
+            </div>
+            <iframe class="cnt"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999841.293321206!2d-75.80920404999999!3d42.75594204999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York!5e0!3m2!1sen!2s!4v1395313088825"></iframe>
     </section>
     <script>
 
