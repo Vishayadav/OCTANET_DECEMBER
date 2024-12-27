@@ -13,8 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-       
-       * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -38,8 +37,9 @@
             color: white;
             transition: 0.3s ease;
         }
-        header h1:hover{
-transform: scale(1.1);
+
+        header h1:hover {
+            transform: scale(1.1);
         }
 
         .navigation {
@@ -170,6 +170,7 @@ transform: scale(1.1);
             margin-left: 100px;
             margin-right: 100px;
         }
+
         .dip {
             background-color: rgb(255, 224, 193);
             height: 40vh;
@@ -177,7 +178,7 @@ transform: scale(1.1);
             justify-content: center;
         }
 
-       
+
         img {
             width: 100wh;
             height: 90vh;
@@ -219,6 +220,19 @@ transform: scale(1.1);
             padding-left: 300px;
         }
 
+        .grid-container1 {
+            max-width: 100wh;
+            max-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            padding-right: 200px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-left: 300px;
+            transition: 0.6s ease;
+        }
+
         #image-container {
             width: 250px;
             height: 250px;
@@ -247,22 +261,23 @@ transform: scale(1.1);
         #image-container img:hover {
             transform: scale(1.07);
         }
-        #image-container h2{
+
+        #image-container h2 {
             margin: 10px;
             color: black;
         }
-        
+
 
         #grid {
             background-color: rgb(214, 203, 187);
             padding-left: 0px;
         }
 
-     
 
-       .dip{
-        background-color: gray;
-       }
+
+        .dip {
+            background-color: gray;
+        }
 
         .dip h2 {
             font-weight: 700;
@@ -272,9 +287,10 @@ transform: scale(1.1);
             margin-bottom: 50px;
             transition: 0.3s ease;
         }
-        .dip h2:hover{
-transform: scale(1.2);
-border-bottom: 2px solid black;
+
+        .dip h2:hover {
+            transform: scale(1.2);
+            border-bottom: 2px solid black;
         }
 
         .dip h4 {
@@ -284,9 +300,10 @@ border-bottom: 2px solid black;
             padding-right: 100px;
         }
 
-        .dis{
+        .dis {
             display: flex;
         }
+
         .ourex {
             height: 30vh;
             width: 100wh;
@@ -297,10 +314,12 @@ border-bottom: 2px solid black;
         .ourex h2 {
             text-align: justify;
             justify-self: center;
-            padding-top: 30px;margin-bottom: 40px;
+            padding-top: 30px;
+            margin-bottom: 40px;
             transition: 0.3s ease;
         }
-        .ourex h2:hover{
+
+        .ourex h2:hover {
             transform: scale(1.2);
             border-bottom: 2px solid black;
         }
@@ -348,7 +367,7 @@ border-bottom: 2px solid black;
             border-bottom: 2px solid white;
         }
 
-        
+
 
         .reviewcontainer {
             align-items: center;
@@ -466,11 +485,16 @@ border-bottom: 2px solid black;
 
             .logo {
                 font-family: 'Times New Roman', 'caveat', Times, serif;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: white;
                 user-select: none;
                 padding-left: 0px;
                 margin-left: 0px;
+            }
+
+            .navigation {
+                margin-left: 5px;
+                margin-right: 0px;
             }
 
             .navigation a {
@@ -490,20 +514,36 @@ border-bottom: 2px solid black;
                 background: rgb(72, 38, 3);
                 border: 2px ridge rgba(rgb(47, 47, 47), green, blue, alpha);
                 backdrop-filter: blur(20px);
-                display: flex;
-                width: 100%;
+               
+                width: 85%;
                 height: 50px;
-                padding: 10px;
-                justify-content: space-between;
-                align-items: center;
                 z-index: 99;
             }
 
-            img {
+            .homepage {
+                display: block;
+                height: 80vh;
                 width: 100%;
-                height: 50vh;
-                padding-left: 0px;
-                padding-right: 0px;
+            }
+
+            .homepage img {
+                margin-top: 70px;
+                height: 400px;
+                width: 90%;
+            }
+
+            .text h2 {
+                margin-top: 2px;
+            }
+
+            .text h4 {
+                display: none;
+            }
+
+            .but {
+                display: flex;
+                width: 100%;
+                margin-left: 70px;
             }
 
             .dis {
@@ -603,21 +643,6 @@ border-bottom: 2px solid black;
 
 
 
-            .btn {
-                width: 130px;
-                height: 50px;
-                background: black;
-                border: 2px solid #162938;
-                outline: none;
-                border-radius: 6px;
-                cursor: pointer;
-                color: #ffffff;
-                justify-content: center;
-                justify-content: center;
-                margin-left: 125px;
-                margin-top: 60px;
-            }
-
 
             .miya {
                 display: none;
@@ -674,7 +699,8 @@ border-bottom: 2px solid black;
                 background-color: rgba(0, 0, 0, 0.5);
                 z-index: 2;
             }
-            .background2 img{
+
+            .background2 img {
                 height: 80vh;
                 width: 100%;
             }
@@ -787,7 +813,7 @@ border-bottom: 2px solid black;
 
 <body>
     <header>
-        <h1>FashionInsta</h1>
+        <h1 class="logo">FashionInsta</h1>
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -798,8 +824,8 @@ border-bottom: 2px solid black;
     <div class="homepage">
         <img src="octwebpage1.2mod.jpeg" alt="homepage2">
         <div class="text">
-            <h2>FashionInsta</h2> 
-<hr>
+            <h2>FashionInsta</h2>
+            <hr>
             <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum esse iure aliquam alias ipsam
                 consequuntur explicabo rerum tenetur distinctio labore nemo, iusto nihil magnam repellat facilis odio
                 facere suscipit corporis, a natus qui. Aut asperiores a molestiae. In incidunt similique sed nesciunt
@@ -825,7 +851,7 @@ border-bottom: 2px solid black;
     <div class="miya">
         <hr>
         <div class="tem">
-           
+
             <img src="cta1.jpeg" alt="CTA1" style="height: 50vh;  width: 250px;">
             <img src="cta2.jpeg" alt="CTA1" style="height: 50vh; width:280px;">
             <img src="cta3.jpeg" alt="CTA1" style="height: 50vh; ">
@@ -835,7 +861,7 @@ border-bottom: 2px solid black;
         </div>
         <div class="nav">
             <hr>
-            <h1 >Explore Latest Trends In Fashion
+            <h1>Explore Latest Trends In Fashion
                 And
                 Find Your Perfect Fit!</h1>
 
@@ -858,16 +884,18 @@ border-bottom: 2px solid black;
 
             <h2>About Us</h2>
             <h4>
-              
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur
-                    voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit
-                    inventore eveniet natus? Eligendi cum velit officiis minima quo libero beatae eaque necessitatibus
-                    voluptates illum rerum obcaecati fugit animi tempora laborum qui, delectus harum ab maiores et natus
-                    deserunt minus! Porro labore quod veniam odit architecto explicabo esse aperiam voluptatum dolorem
-                    praesentium quam maiores, impedit et a voluptatibus unde! Dolorum fuga voluptatem deleniti sapiente
-                    ducimus aliquam aperiam assumenda, quibusdam nobis iure! Earum numquam itaque maxime sint quae
-                    similique, magnam incidunt tempora pariatur voluptatem qui eos natus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, incidunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nostrum .
-             
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur facilis consectetur
+                voluptate numquam? Omnis architecto quo quidem recusandae. Culpa esse magnam voluptatum velit
+                inventore eveniet natus? Eligendi cum velit officiis minima quo libero beatae eaque necessitatibus
+                voluptates illum rerum obcaecati fugit animi tempora laborum qui, delectus harum ab maiores et natus
+                deserunt minus! Porro labore quod veniam odit architecto explicabo esse aperiam voluptatum dolorem
+                praesentium quam maiores, impedit et a voluptatibus unde! Dolorum fuga voluptatem deleniti sapiente
+                ducimus aliquam aperiam assumenda, quibusdam nobis iure! Earum numquam itaque maxime sint quae
+                similique, magnam incidunt tempora pariatur voluptatem qui eos natus Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Cupiditate, incidunt Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Voluptates, nostrum .
+
             </h4>
 
         </div>
@@ -875,11 +903,12 @@ border-bottom: 2px solid black;
     <div class="dis1">
         <section class="section1" style="background-color: rgb(90 90 90);">
 
-            <img  src="octwebpage1.1.jpg"
-                style="height: 100vh; width: 100%;  border: 2px  solid; ">
+            <img src="octwebpage1.1.jpg" style="height: 100vh; width: 100%;  border: 2px  solid; ">
             <div class="grid-container">
 
-                <div id="image-container">
+                <div id="image-container" style="
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="spring.jpeg" alt="Spring" style="  border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
                     <h2>Spring</h2>
@@ -887,7 +916,9 @@ border-bottom: 2px solid black;
 
 
 
-                <div id="image-container">
+                <div id="image-container" style="
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="summer.jpeg" alt="summer" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
@@ -896,7 +927,9 @@ border-bottom: 2px solid black;
 
 
 
-                <div id="image-container">
+                <div id="image-container" style="
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="autumn.jpeg" alt="Autumn" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
@@ -905,7 +938,9 @@ border-bottom: 2px solid black;
 
 
 
-                <div id="image-container">
+                <div id="image-container" style="
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="winter.jpeg" alt="Winter" style="
                 border-top-left-radius: 100px;
                    border-bottom-right-radius: 100px;">
@@ -919,12 +954,14 @@ border-bottom: 2px solid black;
         <section class="section1" style="background-color: rgb(130 126 121);">
 
 
-            <div class="grid-container" style=" height: 100vh; width: 100wh;padding-left: 200px;
+            <div class="grid-container1" style=" height: 100vh; width: 100wh;padding-left: 200px;
             padding-bottom: 20px;
             padding-top: 20px; padding-right: 300px;">
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;">
+                border-bottom-left-radius: 100px;  border-top-left-radius: 0px; border-bottom-right-radius: 0px;
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="casual.jpeg" alt="Casual" style="   border-top-right-radius: 100px;
                     border-bottom-left-radius: 100px; background-size: contain;">
                     <h2>Casual Wear</h2>
@@ -933,8 +970,10 @@ border-bottom: 2px solid black;
 
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;">
-                    <img src="formal.jpeg" alt="Formal" style="
+                border-bottom-left-radius: 100px;   border-top-left-radius: 0px; border-bottom-right-radius: 0px;
+                border: 4px solid black;
+                outline: 2px solid white;"">
+                    <img src=" formal.jpeg" alt="Formal" style="
                    border-top-right-radius: 100px;
                        border-bottom-left-radius: 100px; ">
                     <h2>Formal Wear</h2>
@@ -943,8 +982,10 @@ border-bottom: 2px solid black;
 
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px; margin-bottom: 40px;">
-                    <img src="active.jpeg" alt="Active" style="
+                border-bottom-left-radius: 100px; margin-bottom: 40px;   border-top-left-radius: 0px; border-bottom-right-radius: 0px;
+                border: 4px solid black;
+                outline: 2px solid white;"">
+                    <img src=" active.jpeg" alt="Active" style="
                     border-top-right-radius: 100px;
                        border-bottom-left-radius: 100px; ">
                     <h2>Active Wear</h2>
@@ -953,7 +994,9 @@ border-bottom: 2px solid black;
 
 
                 <div id="image-container" style=" border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;  margin-bottom: 40px;">
+                border-bottom-left-radius: 100px;  margin-bottom: 40px;   border-top-left-radius: 0px; border-bottom-right-radius: 0px;
+                border: 4px solid black;
+                outline: 2px solid white;">
                     <img src="outer.jpeg" alt="outer" style="
                     border-top-right-radius: 100px;
                        border-bottom-left-radius: 100px; background-size: cover;">
@@ -1021,11 +1064,11 @@ border-bottom: 2px solid black;
     <section>
         <div class="clientreview">
             <div class="background2">
-                <img src="cdnj11.jpeg" alt="Client Review Section goes here" >
+                <img src="cdnj11.jpeg" alt="Client Review Section goes here">
                 <div class="overlay">
                     <h1>Client Review</h1>
                     <div class="reviewcontainer">
-                        <div class="dis"  >
+                        <div class="dis">
                             <div class="review" style="margin-left:150px; margin-right: 40px;">
                                 <h2>Jeffry Smith</h2>
                                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore aperiam vitae
@@ -1063,7 +1106,9 @@ border-bottom: 2px solid black;
 
 
                     </div>
-                    <h3 style="align-self: flex-start; justify-self:left; margin-top: 150px; font-size: 1rem; color: gray;">Made by Visha Yadav</h3>
+                    <h3
+                        style="align-self: flex-start; justify-self:left; margin-top: 150px; font-size: 1rem; color: gray;">
+                        Made by Visha Yadav</h3>
                 </div>
             </div>
         </div>
