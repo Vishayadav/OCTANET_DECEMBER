@@ -22,8 +22,3 @@ The Fashion Landing Website is a visually appealing and responsive web page desi
 License
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-Contact
-For any inquiries or feedback, please reach out to:
-
-Your Name: your.email@example.com
-GitHub: yourusername
